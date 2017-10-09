@@ -6,7 +6,7 @@ namespace Infrastructure.Security
 {
     public static class SecureStringExtensions
     {
-        public static string ConvertToUnsecureString(this SecureString securePassword)
+        public static string ToUnsecureString(this SecureString securePassword)
         {
             if (securePassword == null)
                 throw new ArgumentNullException("securePassword");

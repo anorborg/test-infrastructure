@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Security;
+using System.Threading;
 
 namespace Infrastructure.Cli.Utils
 {
@@ -23,7 +24,7 @@ namespace Infrastructure.Cli.Utils
             {
                 for(int i = 0; i < 4; i++)
                 {
-                    System.Threading.Thread.Sleep(100);
+                    Thread.Sleep(100);
                     spinner.Turn();
                 }
             }
@@ -34,8 +35,8 @@ namespace Infrastructure.Cli.Utils
             ConsoleKeyInfo key;
             var secureString = new SecureString();
 
-            while (true) {
-                
+            while (true)
+            {
                 key = Console.ReadKey(true);
 
                 if (key.KeyChar == -1) break;
