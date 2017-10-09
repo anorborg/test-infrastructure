@@ -3,7 +3,4 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Infrastructure</RootNamespace>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
-  </ItemGroup>
 </Project>
