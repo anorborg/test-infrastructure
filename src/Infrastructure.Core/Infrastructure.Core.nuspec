@@ -11,5 +11,8 @@
     <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags></tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
   </metadata>
 </package>
